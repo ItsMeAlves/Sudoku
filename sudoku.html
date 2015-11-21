@@ -121,6 +121,27 @@
 			&copy; Gabriel Alves de Lima - Linguagem de Programação Funcional - Professor Luís - Engenharia da Computação - UPE
 		</footer>
 
-		<script type="text/javascript" src='js/sudoku.js'></script>
+		<script type="text/javascript">
+	function getStartingArray() {
+    var array = [];
+    var column = 1;
+    var row = 1;
+    for (var row = 1; row <= 9; ++row) {
+      var aux = [];
+      for (var column = 1; column <= 9; ++column) try { {
+        var element = document.getElementById((("l" + row) + "c") + column).textContent;
+        aux.push(parseInt(element));
+      } 
+}         catch(ex) {
+          aux.push(-1)
+} 
+ ;
+      array.push(aux);
+    };
+    return array;
+  };
+
+  		console.log(getStartingArray())
+		</script>
 	</body>
 </html>

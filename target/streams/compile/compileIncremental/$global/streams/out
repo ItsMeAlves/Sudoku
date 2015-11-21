@@ -17,18 +17,16 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/gabriel/Develop/poli-lpf/sudoku/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 1b953be9, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 6fd8c00c, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/jdk1.8.0_65/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_65/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_65/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_65/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_65/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_65/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_65/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_65/jre/classes:/home/gabriel/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/gabriel/Develop/poli-lpf/sudoku/target/scala-2.10/classes:/home/gabriel/.ivy2/cache/org.jscala/jscala-macros_2.10/jars/jscala-macros_2.10-0.3.jar:/home/gabriel/.ivy2/cache/com.yahoo.platform.yui/yuicompressor/jars/yuicompressor-2.4.7.jar:/home/gabriel/.ivy2/cache/rhino/js/jars/js-1.6R7.jar[0m
-[0m[[31merror[0m] [0m/home/gabriel/Develop/poli-lpf/sudoku/sudoku.scala:3: object JCollection is not a member of package org.jscala[0m
-[0m[[31merror[0m] [0mimport org.jscala.JCollection[0m
-[0m[[31merror[0m] [0m       ^[0m
-[0m[[31merror[0m] [0m/home/gabriel/Develop/poli-lpf/sudoku/sudoku.scala:8: not found: value HTMLCollection[0m
-[0m[[31merror[0m] [0m        for(x:HTMLCollection <- (HTMLCollection) fields) {[0m
-[0m[[31merror[0m] [0m                                 ^[0m
-[0m[[31merror[0m] [0mtwo errors found[0m
-[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
-[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0mdebug[0m] [0mScala compilation took 1.505561468 s[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
