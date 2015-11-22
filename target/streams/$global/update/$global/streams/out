@@ -7,9 +7,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#sudoku_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#sudoku_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a4e5de5[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37214b63[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@3a4e5de5[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@37214b63[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/org.scala-lang/scala-library/2.10.3/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom[0m
@@ -19,7 +19,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.3!scala-library.pom(pom.original) (1164ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.3!scala-library.pom(pom.original) (785ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in jcenter[0m
@@ -41,7 +41,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.jscala#jscala-macros_2.10;0.3!jscala-macros_2.10.pom(pom.original) (646ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.jscala#jscala-macros_2.10;0.3!jscala-macros_2.10.pom(pom.original) (809ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/org.jscala/jscala-macros_2.10/0.3/jars/jscala-macros_2.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.jar[0m
 [0m[[0mdebug[0m] [0m	found org.jscala#jscala-macros_2.10;0.3 in jcenter[0m
@@ -65,7 +65,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.yahoo.platform.yui#yuicompressor;2.4.7!yuicompressor.pom(pom.original) (962ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.yahoo.platform.yui#yuicompressor;2.4.7!yuicompressor.pom(pom.original) (801ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/com.yahoo.platform.yui/yuicompressor/2.4.7/jars/yuicompressor.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.jar[0m
 [0m[[0mdebug[0m] [0m	found com.yahoo.platform.yui#yuicompressor;2.4.7 in jcenter[0m
@@ -84,7 +84,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] rhino#js;1.6R7!js.pom(pom.original) (799ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] rhino#js;1.6R7!js.pom(pom.original) (664ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/rhino/js/1.6R7/jars/js.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.jar[0m
 [0m[[0mdebug[0m] [0m	found rhino#js;1.6R7 in jcenter[0m
@@ -250,7 +250,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.3!scala-compiler.pom(pom.original) (1073ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.3!scala-compiler.pom(pom.original) (689ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/org.scala-lang/scala-compiler/2.10.3/jars/scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.3 in jcenter[0m
@@ -277,7 +277,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.3!scala-reflect.pom(pom.original) (557ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.3!scala-reflect.pom(pom.original) (684ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/org.scala-lang/scala-reflect/2.10.3/jars/scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.3 in jcenter[0m
@@ -309,7 +309,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#jline;2.10.3!jline.pom(pom.original) (768ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#jline;2.10.3!jline.pom(pom.original) (1092ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/gabriel/.ivy2/local/org.scala-lang/jline/2.10.3/jars/jline.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#jline;2.10.3 in jcenter[0m
@@ -332,45 +332,45 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.3!scala-library.jar (43567ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.3!scala-library.jar (43854ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.jar ...[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/jscala/jscala-macros_2.10/0.3/jscala-macros_2.10-0.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.jscala#jscala-macros_2.10;0.3!jscala-macros_2.10.jar (10850ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.jscala#jscala-macros_2.10;0.3!jscala-macros_2.10.jar (6719ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.jar ...[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/com/yahoo/platform/yui/yuicompressor/2.4.7/yuicompressor-2.4.7.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.yahoo.platform.yui#yuicompressor;2.4.7!yuicompressor.jar (5959ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.yahoo.platform.yui#yuicompressor;2.4.7!yuicompressor.jar (4945ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.jar ...[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/rhino/js/1.6R7/js-1.6R7.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] rhino#js;1.6R7!js.jar (5436ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] rhino#js;1.6R7!js.jar (6708ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar ...[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar (49258ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar (112875ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar ...[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar (11264ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar (30091ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.jar ...[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#jline;2.10.3!jline.jar (1190ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#jline;2.10.3!jline.jar (1260ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 9871ms :: artifacts dl 127542ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8940ms :: artifacts dl 206462ms[0m
 [0m[[0mdebug[0m] [0m	report for default#sudoku_2.10;1.0 compile produced in /home/gabriel/Develop/poli-lpf/sudoku/target/resolution-cache/reports/default-sudoku_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#sudoku_2.10;1.0 runtime produced in /home/gabriel/Develop/poli-lpf/sudoku/target/resolution-cache/reports/default-sudoku_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#sudoku_2.10;1.0 test produced in /home/gabriel/Develop/poli-lpf/sudoku/target/resolution-cache/reports/default-sudoku_2.10-test.xml[0m
@@ -384,5 +384,5 @@
 [0m[[0mdebug[0m] [0m	report for default#sudoku_2.10;1.0 docs produced in /home/gabriel/Develop/poli-lpf/sudoku/target/resolution-cache/reports/default-sudoku_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#sudoku_2.10;1.0 pom produced in /home/gabriel/Develop/poli-lpf/sudoku/target/resolution-cache/reports/default-sudoku_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#sudoku_2.10;1.0 scala-tool produced in /home/gabriel/Develop/poli-lpf/sudoku/target/resolution-cache/reports/default-sudoku_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (9871ms resolve - 127542ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (8940ms resolve - 206462ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
