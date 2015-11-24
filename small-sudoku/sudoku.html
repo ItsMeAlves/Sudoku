@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<title>Small-Sudoku - JScala e <3</title>
+</head>
+<body class='container'>
+	<div class='center'>
+		<h1 class='cabecalho'>Small-Sudoku! JScala e <3</h1>
+		<h4>Clique nas celulas para definir valores iniciais e, depois, clique em iniciar!</h4>
+		<h4>O computador vai te mostrar a resposta.</h4>
+		<h5>A página será recarregada caso os valores iniciais representem um tabuleiro inválido.</h5>
+	</div>
+	<br>
+	<table class='center table table-bordered'>
+		<tbody id='fields'>
+			<tr id='id1'>
+				<td id='l1c1' class='cinza field'>-</td>
+				<td id='l1c2' class='cinza field'>-</td>
+				<td id='l1c3' class='field'>-</td>
+				<td id='l1c4' class='field'>-</td>
+			</tr>
+			<tr id='id2'>
+				<td id='l2c1' class='cinza field'>-</td>
+				<td id='l2c2' class='cinza field'>-</td>
+				<td id='l2c3' class='field'>-</td>
+				<td id='l2c4' class='field'>-</td>
+			</tr>
+			<tr id='id3'>
+				<td id='l3c1' class='field'>-</td>
+				<td id='l3c2' class='field'>-</td>
+				<td id='l3c3' class='cinza field'>-</td>
+				<td id='l3c4' class='cinza field'>-</td>
+			</tr>
+			<tr id='id4'>
+				<td id='l4c1' class='field'>-</td>
+				<td id='l4c2' class='field'>-</td>
+				<td id='l4c3' class='cinza field'>-</td>
+				<td id='l4c4' class='cinza field'>-</td>
+			</tr>
+		</tbody>
+	</table>
+	<button id='btn-principal' class='btn btn-primary btn-block btn-primary'>Iniciar!</button>
+	<br>
+	<footer class='center rodape'>
+		&copy; Gabriel Alves de Lima - Linguagem de Programação Funcional 2015.2 - Professor Luís Carlos Menezes - Engenharia da Computação - UPE
+	</footer>
+
+	<script type="text/javascript">
+		for(var a = 1; a <= 4; a += 1) {
+			for(var b = 1; b <= 4; b += 1) {
+				var element = document.getElementById("l" + a + "c" + b);
+				element.addEventListener("click", function() {
+					if(this.textContent === "-") {
+						this.textContent = "1";
+					}
+					else if(this.textContent === "4") {
+						this.textContent = "-";
+					}
+					else {
+						this.textContent = "" + (parseInt(this.textContent) + 1)
+					}
+				});
+			} 
+		}
+	</script>
+
+	<script type="text/javascript" src='js/sudoku.js'>
+	</script>
+
+
+</body>
+</html>
