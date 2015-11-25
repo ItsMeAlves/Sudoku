@@ -21,9 +21,11 @@ object main extends App {
     val js = javascript {
 
         //Cria a classe Tabuleiro, que vai representar o Sudoku
-        class Tabuleiro() {
+        //Recebe uma fonte para possivelmente copiar o array
+        class Tabuleiro(fonte:Tabuleiro) {
             //Este array representa o tabuleiro desenhado no HTML
             val array:JArray[JArray[Int]] = JArray()  
+
 
             //Obtém os valores iniciais definidos no HTML por um pequeno javascript
             //Recebe um booleano para verificar se essa operação é o começo da execução
@@ -45,6 +47,15 @@ object main extends App {
                         console.log("Tabuleiro inválido! Recarregando...")
                         document.location.reload(true)
                     }
+                }
+            }
+
+            //Vai fazer uma cópia de cada linha do tabuleiro fonte e vai adicionar ao array
+            def obterArrayDaFonte() = {
+                if(this.fonte != null) {
+                    for(linha <- 0 to 8) {
+                        this.array.push(fonte.array(linha).concat(JArray()))
+                    } 
                 }
             }
 
@@ -169,35 +180,36 @@ object main extends App {
             //Função que resolve o tabuleiro, usando o algoritmo de backtracking
             def resolve():Unit = {
                 this.atualizaHTML()
-
                 //Se o tabuleiro está preenchido, para a resolução e atualiza o HTML
                 if(this.verificaSolucao()) {
                     console.log("sem mais jogadas")
                     this.atualizaHTML()
                 }
                 else {
-                    //Procura no HTML a primeira posição vazia para testar as soluções
-                    for(a <- 1 to 9) {
-                        for(b <- 1 to 9) {
-                            var celula = document.getElementById("l" + a + "c" + b)
-
-                            //Ao encontrar essa primeira posição, tenta-se a resolução
-                            //Cria-se tabuleiros com todas as próximas jogadas possíveis
-                            //Para todas essas próximas jogadas, tenta-se uma resolução
-                            if(celula.textContent == "NaN") {
+                    var todasAsPosicoes:JArray[JArray[Tabuleiro]] = JArray()
+                    for(a <- 0 to 8) {
+                        for(b <- 0 to 8) {
+                            if(isNaN(this.array(a)(b))) {
+                                var respostas:JArray[Tabuleiro] = JArray()
                                 var tabuleiro:Tabuleiro = null
 
-                                //Valores de jogadas possíveis
                                 for(valor <- 1 to 9) {
-                                    tabuleiro = new Tabuleiro()
-                                    tabuleiro.obterArrayDoHTML(false)
-                                    tabuleiro.array(a-1)(b-1) = valor
+                                    tabuleiro = new Tabuleiro(this)
+                                    tabuleiro.obterArrayDaFonte()
+                                    tabuleiro.array(a)(b) = valor
                                     if(tabuleiro.verificaValidade()) {
-                                        console.log("tentando")
-                                        tabuleiro.resolve()   //Resolve cada jogada válida
+                                        respostas.push(tabuleiro)
                                     }
                                 }
+
+                                todasAsPosicoes.push(respostas)
                             }
+                        }
+                    }
+
+                    for(respostas <- todasAsPosicoes) {
+                        for(t <- respostas) {
+                            t.resolve()
                         }
                     }
                 }
@@ -211,7 +223,7 @@ object main extends App {
             //Se o botão for para iniciar, muda o título dele e começa a resolução
             if(btn.textContent != "Reiniciar!") {
                 btn.textContent = "Reiniciar!";
-                val tabuleiro = new Tabuleiro()     //Tabuleiro novo
+                val tabuleiro = new Tabuleiro(null)     //Tabuleiro novo
                 tabuleiro.obterArrayDoHTML(true)    //Lê os valores iniciais
                 tabuleiro.atualizaHTML()            //Atualiza o html para iterações da resolução
                 tabuleiro.resolve()                 //resolve o tabuleiro inicial
