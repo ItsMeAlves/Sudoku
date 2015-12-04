@@ -1,0 +1,30 @@
+Scala Sudoku Solver
+Por Gabriel Alves de Lima
+Disciplina: Linguagem de Programação Funcional
+Professor: Luís Carlos Menezes
+
+O código imprime no console todas as possíveis respostas para um dado tabuleiro inicial.
+
+(Exemplos estão na pasta como tabuleiro-exemplo.png e resposta-exemplo.png, retirados da página https://pt.wikipedia.org/wiki/Sudoku)
+Digite, por exemplo:
+53007
+600195
+09800006
+800060003
+400803001
+700020006
+06000028
+000419005
+000080079
+
+e a resposta será:
+534678912
+672195348
+198342567
+859761423
+426853791
+713924856
+961537284
+287419635
+345286179
+
