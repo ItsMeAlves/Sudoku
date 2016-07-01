@@ -4,7 +4,7 @@
  *  Aluno: Gabriel Alves de Lima (http://github.com/ItsMeAlves/Sudoku)
  *  Para execução, entrar na pasta que contém o arquivo csudoku.scala
  *  Executar 'scalac csudoku.scala'
- *			 'scala main' 
+ 			 'scala main' 
  *  O código irá pedir o tabuleiro de cima para baixo
  */
 
@@ -49,58 +49,64 @@ class Table(val content:String = "") {
 		//Faz a verificação de pertinência múltipla em cada linha do tabuleiro
 		//Retorna true se está tudo conforme as regras
 		def verifyRows():Boolean = {
-			var answer:Boolean = true
-			for(a <- 0 to 8) {
-				val row = this.content.substring(a * 9, (a * 9) + 9)
-				answer = answer && !verifyMultipleElements(row)
-			}
+			//Gera uma lista com todas as linhas em forma de string
+			val rows = for(a <- 0 to 8) yield this.content.substring(a * 9, (a * 9) + 9)
+			
+			//Diz que a resposta é se não existem linhas com múltiplos elementos
+			val answer = rows.filter((x) => verifyMultipleElements(x)).length == 0
+
+			//Retorna a resposta
 			answer
 		}
 
 		//Faz a verificação de pertinência múltipla em cada coluna do tabuleiro
 		//Retorna true se está tudo conforme as regras
 		def verifyColumns():Boolean = {
-			var answer:Boolean = true
-			for(a <- 0 to 8) {
-				val column = "" + this.content(a) + this.content(a + 9) +
+			//Gera uma lista com todas as colunas
+			val columns = for(a <- 0 to 8) yield "" + this.content(a) + this.content(a + 9) +
 					this.content(a + 18) + this.content(a + 27) +
 					this.content(a + 36) + this.content(a + 45) +
 					this.content(a + 54) + this.content(a + 63) +
 					this.content(a + 72)
-				answer = answer && !verifyMultipleElements(column)
-			}
+
+			//Diz que a resposta é se não existem colunas com múltiplos elementos
+			val answer = columns.filter((x) => verifyMultipleElements(x)).length == 0
+			
+			//Retorna a resposta
 			answer
 		}
 
 		//Faz a verificação de pertinência múltipla em cada quadrante do tabuleiro
 		//Retorna true se está tudo conforme as regras
 		def verifySquares():Boolean = {
-			var answer:Boolean = true
-			for(a <- 0 to 2) {
-				val squares = "" + this.content(a*3) + this.content(a*3 + 1) +
-					this.content(a*3 + 2) + this.content(a*3 + 9) +
-					this.content(a*3 + 10) + this.content(a*3 + 11) +
-					this.content(a*3 + 18) + this.content(a*3 + 19) +
-					this.content(a*3 + 20)
-				answer = answer && !verifyMultipleElements(squares)
-			}
-			for(a <- 0 to 2) {
-				val squares = "" + this.content(a*3 + 27) + this.content(a*3 + 28) +
-					this.content(a*3 + 29) + this.content(a*3 + 36) +
-					this.content(a*3 + 37) + this.content(a*3 + 38) +
-					this.content(a*3 + 45) + this.content(a*3 + 46) +
-					this.content(a*3 + 47)
-				answer = answer && !verifyMultipleElements(squares)
-			}
-			for(a <- 0 to 2) {
-				val squares = "" + this.content(a*3 + 54) + this.content(a*3 + 55) +
-					this.content(a*3 + 56) + this.content(a*3 + 63) +
-					this.content(a*3 + 64) + this.content(a*3 + 65) +
-					this.content(a*3 + 72) + this.content(a*3 + 73) +
-					this.content(a*3 + 74)
-				answer = answer && !verifyMultipleElements(squares)
-			}
-			answer	
+			//Gera uma lista com os quadrantes superiores
+			val upperSquares = for(a <- 0 to 2) yield "" + this.content(a*3) + 
+					this.content(a*3 + 1) + this.content(a*3 + 2) + 
+					this.content(a*3 + 9) + this.content(a*3 + 10) + 
+					this.content(a*3 + 11) + this.content(a*3 + 18) + 
+					this.content(a*3 + 19) + this.content(a*3 + 20)
+				
+			//Gera uma lista com os quadrantes intermediários
+			val middleSquares = for(a <- 0 to 2) yield "" + this.content(a*3 + 27) + 
+					this.content(a*3 + 28) + this.content(a*3 + 29) +
+					this.content(a*3 + 36) + this.content(a*3 + 37) +
+					this.content(a*3 + 38) + this.content(a*3 + 45) + 
+					this.content(a*3 + 46) + this.content(a*3 + 47)
+
+			//Gera uma lista com os quadrantes inferiores
+			val lowerSquares = for(a <- 0 to 2) yield "" + this.content(a*3 + 54) + 
+					this.content(a*3 + 55) + this.content(a*3 + 56) + 
+					this.content(a*3 + 63) + this.content(a*3 + 64) + 
+					this.content(a*3 + 65) + this.content(a*3 + 72) +
+					this.content(a*3 + 73) + this.content(a*3 + 74)
+
+			//Diz que a resposta é se não existem quadrantes com múltiplos elementos
+			val answer = (upperSquares.filter((x) => verifyMultipleElements(x)).length == 0) &&
+						(middleSquares.filter((x) => verifyMultipleElements(x)).length == 0) &&
+						(lowerSquares.filter((x) => verifyMultipleElements(x)).length == 0)
+
+			//Retorna a respsota
+			answer
 		}
 
 		//Só é válido se todas as regras forem válidas
@@ -118,27 +124,34 @@ class Table(val content:String = "") {
 			List()
 		}
 		else {
-			var answers:List[Table] = List()
-			//Gera tabuleiros com todos os valores possíveis como próxima jogada
-			//Porém, só serão respostas os tabuleiros válidos
-			for(value <- 1 to 9) {
-				val newContent = this.content.replaceFirst("0", "" + value)
-				val table = new Table(newContent)
-				if(table.isValid()) {
-					answers = answers :+ table
-				}
-			}
-			answers
+			//Gera uma lista com todos os conteúdos possíveis para próxima jogada
+			val contents = for(value <- 1 to 9) yield this.content.replaceFirst("0", "" + value)
+			//Gera uma lista de tabuleiros com os conteúdos gerados previamente
+			val tables = for(content <- contents) yield new Table(content)
+
+			//Assume como respostas apenas os tabuleiros gerados anteriormente que são válidos
+			val answers = tables.filter((x) => x.isValid())
+			
+			//Retorna essa resposta em uma lista
+			answers.toList
 		}
 	}
 
 	//Retorna o tabuleiro em string, porém formatado em uma matriz 9x9
 	def mkString():String = {
-		var str:String = ""
-		for(a <- 0 to 8) {
-			str = str + this.content.substring(a*9, a*9 + 9) + "\n"
+
+		//Função auxiliar que vai cortando o conteúdo em string de um tamanho dado
+		//Ao final de cada string gerada, é adicionada a quebra de linha e concatenada com a anterior
+		def aux(start:Int, length:Int, s:String):String = {
+			if(start < this.content.length) {
+				aux(start + length, length, s + this.content.substring(start, start + length) + "\n")
+			}
+			else {
+				s
+			}
 		}
-		str
+
+		aux(0,9,"")
 	}
 } 
 
@@ -150,6 +163,8 @@ object main extends App {
 	println("Digite cada linha que deve entrar no tabuleiro")
 	println("Os espaços vazios devem ser zeros")
 	println("Caso a linha dada tenha menos de 9 valores, ela será completada com zeros")
+	println("Segue em anexo um arquivo chamado exemplo.txt que mostra um exemplo de funcionamento")
+	println("O exemplo.txt se baseia no tabuleiro dado por tabuleiro-exemplo.png")
 	println("")
 	println("*****************************************************************")
 
